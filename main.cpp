@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/**
+ * @brief This program asks the user for their name, phone number, address, and age.
+ * Then it repeats back what the user entered.
+ * @return 0 if successful
+ */
 int main() {
     string name;
     string number;
