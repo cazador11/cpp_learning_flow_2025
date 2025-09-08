@@ -1,21 +1,53 @@
-Pseudocode
+Here's a C++ homework assignment that covers fundamental concepts:
 
-Prompt the user: “Enter the first integer”
+## Programming Assignment: Student Grade Management System
 
-Store the input in variable start
+**Objective:** Create a program that manages student grades and calculates statistics.
 
-Prompt the user: “Enter the second integer”
+**Requirements:**
 
-Store the input in variable end
+1. Create a `Student` struct with:
+   - Name (string)
+   - ID (integer)
+   - Array of 5 test scores (doubles)
+   - Average score (double)
 
-If start is less than or equal to end:
+2. Implement these functions:
+   - `void inputStudentData(Student& s)` - Input student info and scores
+   - `double calculateAverage(const Student& s)` - Calculate and return average
+   - `char getLetterGrade(double average)` - Return letter grade (A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: below 60)
+   - `void displayStudent(const Student& s)` - Display all student info
+   - `int findHighestScorer(Student arr[], int size)` - Return index of student with highest average
 
-For i from start to end (inclusive):
+3. In `main()`:
+   - Create an array of 3 students
+   - Input data for each student
+   - Calculate averages
+   - Display all students with their letter grades
+   - Find and display the highest scorer
 
-Print i
+**Sample Output:**
+```
+Enter data for student 1:
+Name: Alice Smith
+ID: 12345
+Enter 5 test scores: 85 92 88 90 87
 
-Else (start > end):
+[After all input...]
 
-For i from start down to end (inclusive):
+Student Records:
+Name: Alice Smith, ID: 12345
+Scores: 85 92 88 90 87
+Average: 88.4, Grade: B
 
-Print i
+[...]
+
+Highest Scorer: Bob Johnson with average 92.6
+```
+
+**Bonus Challenges:**
+- Add input validation (scores must be 0-100)
+- Sort students by average (descending)
+- Save/load student data to/from a file
+
+Submit your `.cpp` file with proper comments and formatting.
